@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    font: 1.03em "open sans", sans-serif;
+}
+
+body {
+    background-color: #ddd;
+    height: 1000px
+}
+
+
+/*----------------------------------*/
+
+#rmenu {
+    float: right;
+}
+
+.menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 60px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+100;Black+3D */
+    background: rgb(125, 126, 125);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(125, 126, 125, 1) 0%, rgba(14, 14, 14, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(125, 126, 125, 1) 0%, rgba(14, 14, 14, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(125, 126, 125, 1) 0%, rgba(14, 14, 14, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e', GradientType=0);
+    /* IE6-9 */
+    color: #fff;
+}
+
+.menu #obada {
+    float: left;
+    height: 30px;
+    padding: 15px;
+    font-size: 1.2em;
+    line-height: 30px;
+}
+
+.menu #obada:hover {
+    background-color: green;
+}
+
+.menu>ul {
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style: none;
+}
+
+.menu>ul>li {
+    float: left;
+}
+
+.menu-item {
+    display: inline-block;
+    padding: 15px 15px;
+    line-height: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-item:hover {
+    background-color: #ff0055;
+}
+
+.friends {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+100;Black+3D */
+    background: rgb(125, 126, 125);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(125, 126, 125, 1) 0%, rgba(14, 14, 14, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(125, 126, 125, 1) 0%, rgba(14, 14, 14, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(125, 126, 125, 1) 0%, rgba(14, 14, 14, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e', GradientType=0);
+    /* IE6-9 */
+    position: absolute;
+    top: 60px;
+    overflow: hidden;
+    max-height: 0;
+}
+
+.friends a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.our-friends {
+    padding: 0;
+}
+
+.our-friends ul {
+    list-style-type: none;
+}
+
+.our-friends ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.our-friends ul li:hover {
+    background-color: #ff0055;
+}
+
+
+/*------------------------------- sub sub drob --------------------------------*/
+
+ul#number {
+    position: absolute;
+    top: 60px;
+    right: 135px;
+    overflow: hidden;
+    background-color: #333;
+    max-height: 0;
+}
+
+.our-friends ul li:hover>#number {
+    max-height: 400px;
+    transition: max-height 0.3s ease-in;
+}
+
+
+/*-------------------- time --------------------*/
+
+.our-friends>ul {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.menu ul li:hover .our-friends>ul {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.3s ease-in;
+}
+
+
+/*---------------------- Controling ------------------------------*/
+
+.menu-item:focus {
+    background-color: #ff0055;
+}
+
+.menu ul li:hover .friends {
+    max-height: 400px;
+    overflow: visible;
+    transition: max-height 0.3s ease-in;
+}
+
+.text {
+    padding-top: 70px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2em;
+    line-height: 40px;
+}
+
+.text span {
+    color: red;
+    font-weight: bolder;
+}
+
+.myimg {
+    padding-top: 30px;
+    height: 300px;
+}
+
+.imgg {
+    text-align: center;
+}

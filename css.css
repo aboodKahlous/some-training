@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    background: #f1f1f1;
+    width: 100%;
+    height: 2000px;
+}
+
+
+/*   start navbar       */
+
+ul {
+    list-style: none;
+    color: #333;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 20px;
+    position: fixed;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+}
+
+
+/*    End navbar    */
+
+
+/*      Header             */
+
+div.header {
+    background-color: #f4511e;
+    padding: 50px;
+    margin: 0;
+    position: relative;
+    min-height: 300px;
+    line-height: 10px;
+    width: 99%;
+    text-align: center;
+    color: #fff;
+    background-image: linear-gradient(to right, #f4511e, #b84b2b);
+}
+
+div.header h1 {
+    text-decoration: overline;
+}
+
+input[type="text"] {
+    margin-right: -3px;
+    padding: 9px;
+    border: 1px solid #fff;
+}
+
+input[type="text"]:hover {
+    color: #fff;
+}
+
+.header button {
+    color: #fff;
+    background: #f4511e;
+    border: 1px solid #f4511e;
+    padding: 8px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/*      end header        */
+
+.left {
+    float: left;
+    width: 65%;
+}
+
+.right {
+    float: right;
+    width: 35%;
+    background-color: #f1f1f1;
+    padding-left: 30px;
+}
+
+.image {
+    padding: 20px;
+    width: 100%;
+    background-color: #aaa;
+    border-radius: 10px;
+}
+
+.place {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-left-color: #f4511e;
+    border-left-width: 3px;
+    height: 420px;
+}
+
+summary {
+    color: #555;
+    cursor: pointer;
+    margin-bottom: 3px;
+    outline: none;
+}
+
+.place2 {
+    background-color: #fff;
+    color: #000;
+    height: 200px;
+    padding: 20px;
+    margin-top: 20px;
+    border-left: 4px solid #f4511e;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* START footer */
+
+div.footer {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* END footer */
+
+div.img {
+    width: 20%;
+    box-shadow: 0 4px 8px 5px rgba(0, 0, 0, .2), 0 8px 20px 5px rgba(0, 0, 0, .16);
+    text-align: center;
+    margin: 20px;
+    margin-left: 40px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+div.container {
+    padding: 10px;
+}
+
+div.img :hover {
+    opacity: .8;
+}
